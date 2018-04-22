@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGraylight"
+    android:padding="8dp">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    app:cardBackgroundColor="@color/colorWhite">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--header-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#dfdfdf">
+        
+    <TextView
+        android:id="@+id/property_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Titlee"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />    
+
+    </RelativeLayout>
+    <!--header ends-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        android:layout_marginTop="0dp"/>
+
+    <!--booking details-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+    <!--#details item : booking date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_booking_date"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/uibooking_date"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Booking Date"
+        android:textSize="14sp"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView
+        android:id="@+id/booking_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="14sp"
+        android:text="Details"
+        android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+    <!--#details item : booking date ends-->
+
+    <!--#details item : booking date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_booking_checkindate"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/uicheck_in_date"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Check in Date"
+            android:textSize="14sp"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/check_in_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="Details"
+            android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+    <!--#details item : booking date ends-->
+
+    <!--#details item : booking date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_booking_checkoutdate"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/uicheck_out_date"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Check out Date"
+            android:textSize="14sp"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/check_out_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="Details"
+            android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+    <!--#details item : booking date ends-->
+
+    <!--#details item : booking date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_booking_numberofpeople"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/uino_of_people"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Number of people"
+            android:textSize="14sp"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/no_of_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="Details"
+            android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+    <!--#details item : booking date ends-->
+
+        <!--#details item : booking date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_bookingamount"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/uieffective_amount"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Effective Amount"
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/effective_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text="Details"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+        <!--#details item : booking date ends-->
+
+
+        <!--#details item : booking date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_booking_payment_status"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/uistatus"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Payment Status"
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:text="Details"
+                android:textSize="14sp" />
+
+            <!--payment button -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/pay"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                app:cardBackgroundColor="@color/colorRed"
+                app:cardCornerRadius="3dp"
+                android:layout_marginLeft="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Now"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--payment button ends-->
+
+        </LinearLayout>
+        <!--#details item : booking date ends-->
+        
+
+    </LinearLayout>
+    <!--booking details ends-->
+
+
+
+    <!-- Admin Details -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorGraylight"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundSpecial"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+    <!-- Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/uiadmin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Space managed by"/>
+
+    <TextView
+        android:id="@+id/admin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Francis Ng'wandu"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"/>
+
+    </LinearLayout>
+    <!-- Name ends-->
+
+
+    <!-- Contacts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- navigation-->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/admin_profile_image"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/avarta"
+                    app:civ_border_color="@color/colorGray"
+                    app:civ_border_width="2dp" />
+
+                <ImageView
+                android:id="@+id/admin_chat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chat_gray"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/admin_space_preview"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_preview"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+            <!-- navigation ends-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:background="@color/colorGraylightspecial"
+                android:layout_marginTop="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp">
+
+
+                <!--#details item : name1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/uiadmin_email"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Manager email"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:id="@+id/admin_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="14sp"
+                        android:text="Details"
+                        android:layout_marginLeft="4dp"/>
+
+                </LinearLayout>
+                <!--#details item : name1 ends-->
+
+                <!--#details item : name1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/uicustomer_name"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Customer name"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:id="@+id/customer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="14sp"
+                        android:text="Details"
+                        android:layout_marginLeft="4dp"/>
+
+                </LinearLayout>
+                <!--#details item : name1 ends-->
+
+                <!--#details item : name1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/uicustomer_email"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Customer email"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:id="@+id/customer_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="14sp"
+                        android:text="Details"
+                        android:layout_marginLeft="4dp"/>
+
+                </LinearLayout>
+                <!--#details item : name1 ends-->
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    <!-- Contacts Ends -->
+
+
+    </LinearLayout>
+    
+    
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

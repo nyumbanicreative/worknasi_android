@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "88374235590",
+    "firebase_url": "https://worknasiapp.firebaseio.com",
+    "project_id": "worknasiapp",
+    "storage_bucket": "worknasiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88374235590:android:288014ebeaaf116a",
+        "android_client_info": {
+          "package_name": "worknasi.worknasiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88374235590-rtcg9glpov81isfn0eaqaoqvhvuu1ges.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "worknasi.worknasiapp",
+            "certificate_hash": "4751bd4ae21e51f8792ca216ba22f63242f89eae"
+          }
+        },
+        {
+          "client_id": "88374235590-lbns1dalc9lepqhiio1utd4pd1vmdgtq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK_UKL6dqheqxdEX6d80vA7dzDnpfyj0o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88374235590-lbns1dalc9lepqhiio1utd4pd1vmdgtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="worknasi.worknasiapp.ReservedSpaces"
+    tools:showIn="@layout/activity_reserved_spaces">
+
+    <LinearLayout
+        android:id="@+id/nocontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/emptyview"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Content to show"
+            android:textColor="@color/colorGray"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlPrimaryColor="@color/colorWhite"
+            app:srlAccentColor="@color/colorGray"
+            app:srlEnableHeaderTranslationContent="true"
+            app:srlEnableLoadmore="true">
+
+            <com.scwang.smartrefresh.header.CircleHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ListView
+                android:id="@+id/listfeed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarStyle="outsideOverlay"
+                android:divider="@null"
+                android:scrollbars="vertical"
+                android:background="@color/colorWhite"
+                android:scrollingCache="true"
+                android:smoothScrollbar="true" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

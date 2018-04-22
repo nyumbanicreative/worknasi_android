@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/applogo"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="REGISTER"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Register here to get our services in full"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/filter_layout_citya"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/form_style"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user"/>
+
+            <EditText
+                android:id="@+id/login_edittext_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="user name"
+                android:textColorHint="@color/colorGray"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorWhite"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/filter_layout_city"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/form_style"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_email"/>
+
+            <EditText
+                android:id="@+id/login_edittext_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="e-mail address"
+                android:textColorHint="@color/colorGray"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorWhite"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/filter_layout_cityaazz"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/form_style"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_password"/>
+
+            <EditText
+                android:id="@+id/login_edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:textColorHint="@color/colorGray"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_layout_cityaa"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/form_style"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_password"/>
+
+            <EditText
+                android:id="@+id/login_edittext_confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="confirm password"
+                android:textColorHint="@color/colorGray"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorWhite"/>
+
+        </LinearLayout>
+
+
+        <!--button-->
+        <RelativeLayout
+            android:id="@+id/login_layout_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/form_style_button"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/filter_text_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTER"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <!--button-->
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+<!-- dp -->
+<LinearLayout
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<!--<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/review_profileimage"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    app:civ_border_color="@color/colorGrayDark"
+    app:civ_border_width="2dp"/>-->
+
+<!--<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/review_profileimage"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/avarta"
+    app:civ_border_color="@color/colorGray"
+    app:civ_border_width="2dp" />-->
+
+    <ImageView
+        android:id="@+id/icon_profile"
+        android:layout_width="@dimen/icon_width_height"
+        android:layout_height="@dimen/icon_width_height" />
+
+
+</LinearLayout>
+
+<!-- content -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="vertical">
+
+<TextView
+    android:id="@+id/review_username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Francis"
+    android:textSize="14sp"
+    android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/review_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 dec 2018   18:00"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="2dp">
+
+<TextView
+    android:id="@+id/review_comment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ghghdgdjj hjhjwe hujwyub uyuwyu wuye whw ywhwuywyw weyyewuyuyw hue"
+    android:textSize="12sp"
+    android:textColor="@color/colorGrayDark" />
+
+    <LinearLayout
+        android:id="@+id/ratinglayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:layout_gravity="center_vertical"
+        android:textSize="13sp"
+        android:textColor="@color/colorAccent"/>
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="@style/RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:isIndicator="true"
+            android:progressBackgroundTint="@color/colorGray"
+            android:progressTint="@color/colorAccent"
+            android:secondaryProgressTint="@color/colorGray"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

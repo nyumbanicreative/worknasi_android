@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renting Plans"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading...."
+        android:textStyle="normal"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlPrimaryColor="@color/colorBackground"
+        app:srlAccentColor="@color/colorGray"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadmore="true"
+        android:layout_marginTop="4dp">
+
+        <com.scwang.smartrefresh.header.CircleHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ListView
+            android:id="@+id/listfeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:background="@color/colorBackground"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>
